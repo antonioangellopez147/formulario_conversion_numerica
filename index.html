@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de conversión numérica entre formatos</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="format.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        Formulario de conversión numérica entre formatos
+    </header>
+
+    <!-- Formulario -->
+    <div class="container">
+        <h1>Formulario de conversión numérica entre formatos</h1>
+        <form>
+            <label for="decimal">Número en decimal:</label>
+            <input type="text" id="decimal" pattern="^-?\d*(\.\d+)?$" placeholder="Ejemplo: -123.45" required>
+
+            <label for="binario">Número en binario:</label>
+            <input type="text" id="binario" pattern="^[01]{0,64}$" placeholder="Ingrese hasta 64 bits" required>
+
+            <label for="signoMagnitud">Número en signo-magnitud:</label>
+            <input type="text" id="signoMagnitud" pattern="^[01]{0,64}$" placeholder="Ingrese hasta 64 bits" required>
+
+            <label for="ca2">Número en complemento a 2:</label>
+            <input type="text" id="ca2" pattern="^[01]{0,64}$" placeholder="Ingrese hasta 64 bits" required>
+
+            <label for="floatSimple">Número en coma flotante con precisión simple (32 bits):</label>
+            <input type="text" id="floatSimple" pattern="^[01]{32}$" placeholder="32 bits exactos" required>
+
+            <label for="floatDoble">Número en coma flotante con precisión doble (64 bits):</label>
+            <input type="text" id="floatDoble" pattern="^[01]{64}$" placeholder="64 bits exactos" required>
+        </form>
+    </div>
+
+    <!-- Pie -->
+    <footer>
+        Desarrollado por Antonio Ángel López Fernández (<a
+            href="mailto:antonioangel.lopez147@comunidadunir.net">antonioangel.lopez147@comunidadunir.net</a>)
+    </footer>
+</body>
+
+</html>
