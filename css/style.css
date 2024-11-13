@@ -65,16 +65,36 @@ input[type="text"] {
 
 /* Footer */
 footer {
-    background-color: #003366;
-    color: #fff;
     text-align: center;
     padding: 1rem;
+    background-color: #333;
+    color: #fff;
     font-size: 0.9rem;
 }
 
 footer a {
-    color: #fff;
+    color: #ff4e00;
+    text-decoration: none;
+}
+
+footer a:hover {
     text-decoration: underline;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.github-icon:hover {
+    transform: scale(1.2);
 }
 
 /* Estilos responsive */
